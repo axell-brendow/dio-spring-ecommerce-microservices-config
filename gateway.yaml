@@ -1,7 +1,10 @@
+server:
+  port: 9000
+
 eureka:
   instance: 
     hostname: localhost
-    port: 9000
+    port: ${server.port}
   client:
     registerWithEureka: true
     fetchRegistry: true
