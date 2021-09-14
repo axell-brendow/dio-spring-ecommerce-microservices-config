@@ -22,7 +22,7 @@ spring:
           lower-case-service-id: true
       routes:
         - id: product-catalog
-          uri: lb://PRODUCT-CATALOG
+          uri: lb://PRODUCT-CATALOG  # lb means load balancer
           predicates:
             - Path=/product/**
         - id: shopping-cart
